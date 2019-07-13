@@ -43,7 +43,7 @@ public class PostsFragment extends Fragment {
         //create data source
         mPosts = new ArrayList<>();
         //create adapter
-        adapter = new PostsAdapter(getContext(), mPosts);
+        adapter = new PostsAdapter(getContext(), mPosts, false);
         //set the adapter on the recycler view
         rvPosts.setAdapter(adapter);
         //set layout manager on recycler view
